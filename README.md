@@ -121,6 +121,13 @@ const Timer = () => {
 
 - React 18.3.1 or higher
 
+## Depended Submodules
+
+The following sibling submodules must be present in the workspace (they are not declared as npm dependencies):
+
+- [`pear-apps-utils-generate-unique-id`](../pear-apps-utils-generate-unique-id)
+- [`tether-dev-docs`](../tether-dev-docs)
+
 ## Related Projects
 
 - [pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager

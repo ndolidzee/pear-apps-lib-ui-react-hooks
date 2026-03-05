@@ -13,9 +13,7 @@
   },
   "peerDependencies": {
     "react": ">=18.3.1",
-    "react-dom": ">=18.3.1",
-    "pear-apps-utils-generate-unique-id": "0.0.x",
-    "tether-dev-docs": "0.0.x"
+    "react-dom": ">=18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
