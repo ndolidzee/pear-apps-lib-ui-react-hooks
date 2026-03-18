@@ -1,4 +1,4 @@
-jest.mock('pear-apps-utils-generate-unique-id', () => {
+jest.mock('@tetherto/pear-apps-utils-generate-unique-id', () => {
   let idCounter = 1
   return {
     generateUniqueId: () => `unique-id-${idCounter++}`,
@@ -9,7 +9,7 @@ jest.mock('pear-apps-utils-generate-unique-id', () => {
 })
 
 import { renderHook, act } from '@testing-library/react'
-import * as uniqueIdModule from 'pear-apps-utils-generate-unique-id'
+import * as uniqueIdModule from '@tetherto/pear-apps-utils-generate-unique-id'
 
 import { useForm } from './useForm'
 

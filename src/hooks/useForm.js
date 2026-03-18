@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { generateUniqueId } from 'pear-apps-utils-generate-unique-id'
+import { generateUniqueId } from '@tetherto/pear-apps-utils-generate-unique-id'
 
 import { getNestedValue } from '../utils/getNestedValue'
 import { setNestedValue } from '../utils/setNestedValue'
