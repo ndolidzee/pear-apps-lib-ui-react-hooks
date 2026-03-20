@@ -5,6 +5,7 @@ A collection of React hooks for Pearpass applications that simplify form handlin
 ## Table of Contents
 
 - [Features](#features)
+- [Security Notice](#security-notice)
 - [Installation](#installation)
 - [Usage Examples](#usage-examples)
 - [Dependencies](#dependencies)
@@ -17,10 +18,15 @@ A collection of React hooks for Pearpass applications that simplify form handlin
 - **useThrottle**: Limit the frequency of state updates
 - **useCountDown**: Create countdown timers with formatting
 
+## Security Notice
+
+1. To ensure the security and integrity of your projects, please note that official PearPass packages are distributed exclusively through our GitHub organization.
+2. Any packages with similar names found on the npm registry or other third-party package managers are not affiliated with PearPass and should be strictly avoided. We recommend installing directly from this repository to ensure you are using the verified, open-source version.
+
 ## Installation
 
 ```bash
-npm install pear-apps-lib-ui-react-hooks
+npm install git+https://github.com/tetherto/pear-apps-lib-ui-react-hooks.git
 ```
 
 ## Usage Examples
@@ -28,7 +34,7 @@ npm install pear-apps-lib-ui-react-hooks
 ### useForm
 
 ```jsx
-import { useForm } from 'pear-apps-lib-ui-react-hooks';
+import { useForm } from '@tetherto/pear-apps-lib-ui-react-hooks';
 
 const MyForm = () => {
     const validate = (values) => {
@@ -59,7 +65,7 @@ const MyForm = () => {
 ### useDebounce
 
 ```jsx
-import { useDebounce } from 'pear-apps-lib-ui-react-hooks';
+import { useDebounce } from '@tetherto/pear-apps-lib-ui-react-hooks';
 
 const SearchComponent = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -83,7 +89,7 @@ const SearchComponent = () => {
 ### useThrottle
 
 ```jsx
-import { useThrottle } from 'pear-apps-lib-ui-react-hooks';
+import { useThrottle } from '@tetherto/pear-apps-lib-ui-react-hooks';
 
 const InfiniteScroll = () => {
     const handleScroll = () => {
@@ -105,7 +111,7 @@ const InfiniteScroll = () => {
 ### useCountDown
 
 ```jsx
-import { useCountDown } from 'pear-apps-lib-ui-react-hooks';
+import { useCountDown } from '@tetherto/pear-apps-lib-ui-react-hooks';
 
 const Timer = () => {
     const timeRemaining = useCountDown({
@@ -121,18 +127,11 @@ const Timer = () => {
 
 - React 18.3.1 or higher
 
-## Depended Submodules
-
-The following sibling submodules must be present in the workspace (they are not declared as npm dependencies):
-
-- [`pear-apps-utils-generate-unique-id`](../pear-apps-utils-generate-unique-id)
-- [`tether-dev-docs`](../tether-dev-docs)
-
 ## Related Projects
 
-- [pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
-- [pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password
-- [tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
+- [@tetherto/pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
+- [@tetherto/pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password
+- [@tetherto/tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
 
 ## License
 
