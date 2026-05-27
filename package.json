@@ -1,5 +1,5 @@
 {
-  "name": "pear-apps-lib-ui-react-hooks",
+  "name": "@tetherto/pear-apps-lib-ui-react-hooks",
   "version": "0.0.11",
   "type": "module",
   "description": "hooks for Pearpass",
